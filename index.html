@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Card 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .hidden {
+            display: none;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="glow-text">Happy Valentine's Day! 💕</h1>
+            <p class="message">ขอให้วันนี้เต็มไปด้วยความรักของคนใกล้ตัวและความสดใสของหนูนะคะหนูแบมแต่คสามรักที่เค้าให้ไปยังไงก็มากกว่าคนอื่นแน่นอนค่ะ ❤️</p>
+            
+            <button onclick="showMessage()">ดูสิ๊ๆ ข้างในมีอะไรคะ</button>
+            
+            <div id="specialMessage" class="hidden">
+                <p>💌 สุขสันต์วันวาเลนไทน์นะคะกองรักหนูแบมที่สู๊ดดที่สุดในโลกเย้ยยยนะคะรักมากกกกมีอะไรเราค่อยๆคุยกันนะคะเค้าอยากมีหนูไปด้วยและอยู่ด้วยกันไปนานๆยังไงวันนี้เค้าก็ขอโษจริงๆนะคะหนูแบมเค้าทำอันนี้มาง้อหนูนะคะ🥰</p>
+                <div class="image-container">
+                    <img src="1739468871686.jpg" alt="Valentine's Surprise">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("specialMessage").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
